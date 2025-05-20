@@ -203,7 +203,7 @@ from read import read_csv, read_pdf
 
 constexpr std::uint8_t max_connections = 100;
 
-const std::string file_path;
+const std::string file_path = get_file_path();
 ```
 
 
