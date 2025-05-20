@@ -62,15 +62,28 @@ int add_numbers(int number1, int number2)
 ---
 
 
-## Naming Convention: Case Style 🐍
+# Naming Convention: Case Style 🐍
 
-1. Use **snake_case** for all naming, including:
-    - Variables
-    - Functions
-    - Class names
-    - Etc. 
-2. This distinguishes your code from external modules and standard libraries.
-    - Example: Use `calculate_average_grade()` instead of `CalculateAvgGrade()`.
+## Variables and Functions
+- Use **snake_case** for naming.
+    - **Why?** This style clearly distinguishes your code from external modules and standard libraries.
+    - **Example:** 
+      - ✅ `calculate_average_grade()`
+      - ❌ `CalculateAvgGrade()`
+
+---
+
+
+## Classes and Files
+- Use **PascalCase** for naming classes.
+    - **Example:**
+      - ✅ `StudentRecord`
+      - ❌ `student_record`
+
+- Use **PascalCase** for file names.
+    - **Example:**
+      - ✅ `DataProcessor.py`
+      - ❌ `data_processor.py`
 
 
 ---
@@ -144,25 +157,36 @@ const char* greeting = "Hi";    // String
 
 
 ## Import and Include Order 📂
-
 1. First, include **standard library** imports.
 2. Then, include **third-party library** imports.
 3. Lastly, include **your own custom/project-specific** imports.
-4. Separate the imports with a single white line
+4. Separate the import groups with a single blank line.
+5. Within each group, arrange imports from shortest to longest line for better readability.
 
 #### Example:
-
 ```python
-# Standard libraries
+# Standard library imports
 import os
 import sys
+import google
 
-# Third-party libraries
+# Third-party library imports with aliases
 import numpy as np
+import polars as pl
+import networkx as nx
 
-# Project-specific imports
-from my_project.module import my_function
-```
+# Third-party relative imports
+from pandas import DataFrame
+from open_cv.vision import U32Vector
+
+# Project-specific direct imports
+import utility
+
+# Project-specific imports with aliases
+import write as w
+
+# Project-specific relative imports
+from read import read_csv, read_pdf
 
 
 ---
