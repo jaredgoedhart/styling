@@ -62,19 +62,16 @@ int add_numbers(int number1, int number2)
 ---
 
 
-# Naming Convention: Case Style 🐍
+## Naming Convention: Case Style 🐍
 
-## Variables and Functions
+### Variables and Functions
 - Use **snake_case** for naming.
     - **Why?** This style clearly distinguishes your code from external modules and standard libraries.
     - **Example:** 
       - ✅ `calculate_average_grade()`
       - ❌ `CalculateAvgGrade()`
 
----
-
-
-## Classes and Files
+### Classes and Files
 - Use **PascalCase** for naming classes.
     - **Example:**
       - ✅ `StudentRecord`
