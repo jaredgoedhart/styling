@@ -199,7 +199,9 @@ from read import read_csv, read_pdf
 #### Example:
 
 ```cpp
-constexpr int max_connections = 100;
+#include <cstdint>
+
+constexpr std::uint8_t max_connections = 100;
 
 const std::string file_path;
 ```
