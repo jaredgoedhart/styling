@@ -234,11 +234,13 @@ const std::string file_path;
 #### Examples:
 
 ```cpp
-float pi = 3.14f;                    // 'f' suffix for float literal
+#include <cstdint>
 
-unsigned int max_users = 100u;       // 'u' suffix for unsigned integer literal
+const float pi = 3.14f;                   // 'f' suffix for float literal
 
-long long big_number = 123456789LL;  // 'LL' suffix for long long literal, but explicit integer type recommended
+const std::uint8_t max_players = 100u;   // 'u' suffix for unsigned 8 bit integer literal
+
+long long big_number = 123456789LL;     // 'LL' suffix for long long literal, but explicit integer type recommended std::int64_t big_number = 123456789;
 ```
 
 
