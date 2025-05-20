@@ -144,9 +144,9 @@ int add_numbers(int number1, int number2)
 2. Use single quotes `''` for **characters**.
 
 #### Examples:
-```c
+```cpp
 const char letter = 'A';         // Character
-const char* greeting = "Hi";    // String
+const std:string greeting = "Hi";    // String
 ```
 
 
