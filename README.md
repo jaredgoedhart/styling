@@ -145,7 +145,7 @@ int add_numbers(int number1, int number2)
 
 #### Examples:
 ```cpp
-const char letter = 'A';         // Character
+const char letter = 'A';              // Character
 const std:string greeting = "Hi";    // String
 ```
 
